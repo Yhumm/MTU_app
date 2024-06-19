@@ -9,7 +9,7 @@ export default function PortalsScreen() {
   return (
     <ScrollView>
       <View style={styles.mainContainer}>
-        <View style={styles.innerContainer}>
+      <View style={styles.fullWidthButtonContainer}>
           <LinearGradient
             start={{ x: 0, y: 0 }}
             end={{ x: 1, y: 0.5 }}
@@ -24,7 +24,9 @@ export default function PortalsScreen() {
               <Text style={styles.buttonText}>Student Portal</Text>
             </TouchableOpacity>
           </LinearGradient>
+          </View>
 
+          <View style={styles.fullWidthButtonContainer}>
           <LinearGradient
             start={{ x: 0, y: 0 }}
             end={{ x: 1, y: 0.5 }}
@@ -41,7 +43,24 @@ export default function PortalsScreen() {
           </LinearGradient>
         </View>
 
-        <View style={styles.innerContainer}>
+        <View style={styles.fullWidthButtonContainer}>
+          <LinearGradient
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 0.5 }}
+            colors={["#4FD100", "#008900"]}
+            style={styles.linearGradient}
+          >
+            <TouchableOpacity
+              style={styles.buttonContainer}
+              onPress={() => Linking.openURL("http://127.0.0.1:5000/")}
+            >
+              <Ionicons name="exit" size={24} color="black" />
+              <Text style={styles.buttonText}>Exeat System</Text>
+            </TouchableOpacity>
+          </LinearGradient>
+          </View>
+
+        <View style={styles.fullWidthButtonContainer}>
           <LinearGradient
             start={{ x: 0, y: 0 }}
             end={{ x: 1, y: 0.5 }}
@@ -56,23 +75,9 @@ export default function PortalsScreen() {
               <Text style={styles.buttonText}>Alumni Portal</Text>
             </TouchableOpacity>
           </LinearGradient>
+          </View>
 
-          <LinearGradient
-            start={{ x: 0, y: 0 }}
-            end={{ x: 1, y: 0.5 }}
-            colors={["#4FD100", "#008900"]}
-            style={styles.linearGradient}
-          >
-            <TouchableOpacity
-              style={styles.buttonContainer}
-              onPress={() => Linking.openURL("https://exeat.mtu.edu.ng/")}
-            >
-              <Ionicons name="exit" size={24} color="black" />
-              <Text style={styles.buttonText}>Exeat System</Text>
-            </TouchableOpacity>
-          </LinearGradient>
-        </View>
-
+        
         <View style={styles.fullWidthButtonContainer}>
           <LinearGradient
             start={{ x: 0, y: 0 }}
@@ -82,7 +87,7 @@ export default function PortalsScreen() {
           >
             <TouchableOpacity
               style={styles.buttonContainer}
-              onPress={() => Linking.openURL("https://ewallet.mtu.edu.ng/")}
+              onPress={() => Linking.openURL("https://nairaly.vercel.app/")}
             >
               <FontAwesome5 name="wallet" size={24} color="black" />
               <Text style={styles.buttonText}>E-Wallet</Text>

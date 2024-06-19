@@ -3,6 +3,7 @@ import { ScrollView, StyleSheet,  } from "react-native";
 import { Avatar, Button, Card, Text } from "react-native-paper";
 import firstCard from "../Assets/Images/grand opening.jpg";
 import logo from "../Assets/Images/mtu_logo.png";
+import secondCard from '../Assets/Images/gender-based violence.jpeg';
 
 
 const LeftContent = (props) => <Avatar.Image size={34} source={logo} />;
@@ -20,7 +21,7 @@ const MyComponent = () => (
     </Card>
 
     <Card style={[styles.cardBox, styles.shadowProp]}>
-      <Card.Cover source={firstCard} style={styles.img} />
+      <Card.Cover source={secondCard} style={styles.img} />
       <Card.Content>
         <Text >Grand Opening of Counselling office in MTU has...</Text>
       </Card.Content>

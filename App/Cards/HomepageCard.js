@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginHorizontal: 20,
     borderRadius: 20,
-   
     borderColor: "grey",
     padding: 10,
     backgroundColor: "white", 
@@ -54,7 +53,8 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.9,
     shadowRadius: 3.84,
     elevation: 10, 
-    marginBottom: 5
+    marginBottom: 5,
+   
   },
   firstText: {
     paddingBottom: 5,
